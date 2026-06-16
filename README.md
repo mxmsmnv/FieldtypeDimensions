@@ -4,6 +4,8 @@ Stores product dimensions (L×W×H) and weight with selectable units of measurem
 
 ---
 
+If this project helps your work, consider supporting future development: [GitHub Sponsors](https://github.com/sponsors/mxmsmnv) or [smnv.org/sponsor](https://smnv.org/sponsor/).  
+
 ## Features
 
 - Four fields in one — length, width, height and weight stored as a single field value
