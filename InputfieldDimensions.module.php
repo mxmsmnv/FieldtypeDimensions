@@ -11,6 +11,7 @@ class InputfieldDimensions extends Inputfield {
             'summary'  => 'Inputfield for FieldtypeDimensions.',
             'version'  => '1.0.3',
             'author'   => 'Maxim Semenov',
+            'href'     => 'https://smnv.org',
             'requires' => 'FieldtypeDimensions',
         ];
     }

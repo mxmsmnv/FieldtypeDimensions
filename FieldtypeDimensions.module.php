@@ -5,7 +5,7 @@ require_once __DIR__ . '/DimensionsValue.php';
 /**
  * FieldtypeDimensions — Product dimensions (L × W × H + Weight) with selectable units
  *
- * @author  Maxim Semenov
+ * @author  Maxim Semenov <maxim@smnv.org> (smnv.org)
  * @version 1.0.0
  * @license MIT
  *
@@ -20,6 +20,7 @@ class FieldtypeDimensions extends Fieldtype implements ConfigurableModule {
             'summary'      => 'Stores product dimensions (L×W×H) and weight with selectable units of measurement.',
             'version'      => '1.0.3',
             'author'       => 'Maxim Semenov',
+            'href'     => 'https://smnv.org',
             'requires'     => 'ProcessWire>=3.0.0',
             'installs'     => 'InputfieldDimensions',
             'configurable' => 3,
