@@ -2,6 +2,8 @@
 
 Stores product dimensions (L×W×H) and weight with selectable units of measurement. Designed for e-commerce and catalog sites built on ProcessWire.
 
+![FieldtypeDimensions](assets/FieldtypeDimensions.png)
+
 ---
 
 **Author:** Maxim Semenov  
