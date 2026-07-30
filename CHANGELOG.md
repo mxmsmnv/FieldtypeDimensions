@@ -4,6 +4,13 @@ All notable changes to FieldtypeDimensions are documented here.
 
 ---
 
+## [1.0.4] — 2026-07-30
+
+### Fixed
+- Restored the configured length and weight unit identifiers on values loaded from the database, so `lengthIn()`, `weightIn()`, `toArray()`, and integrations perform correct metric and imperial conversions.
+
+---
+
 ## [1.0.3] — 2026-03-05
 
 Initial release.

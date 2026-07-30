@@ -6,7 +6,7 @@ require_once __DIR__ . '/DimensionsValue.php';
  * FieldtypeDimensions — Product dimensions (L × W × H + Weight) with selectable units
  *
  * @author  Maxim Semenov <maxim@smnv.org> (smnv.org)
- * @version 1.0.0
+ * @version 1.0.4
  * @license MIT
  *
  * ProcessWire Fieldtype for storing product dimensions: length, width, height, weight.
@@ -18,7 +18,7 @@ class FieldtypeDimensions extends Fieldtype implements ConfigurableModule {
         return [
             'title'        => 'Dimensions',
             'summary'      => 'Stores product dimensions (L×W×H) and weight with selectable units of measurement.',
-            'version'      => '1.0.3',
+            'version'      => '1.0.4',
             'author'       => 'Maxim Semenov',
             'href'     => 'https://smnv.org',
             'requires'     => 'ProcessWire>=3.0.0',
@@ -519,7 +519,8 @@ class FieldtypeDimensions extends Fieldtype implements ConfigurableModule {
         $dim->width  = isset($value['width'])  ? $this->roundDisplay((float)$value['width']  / $lf) : null;
         $dim->height = isset($value['height']) ? $this->roundDisplay((float)$value['height'] / $lf) : null;
         $dim->weight = isset($value['weight']) ? $this->roundDisplay((float)$value['weight'] / $wf) : null;
-        // Do NOT store units in the value — they are always read from field config at render time
+        $dim->length_unit = $lu;
+        $dim->weight_unit = $wu;
 
         return $dim;
     }
